@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-iotthingslibrary-dev-120011-authRole",
+      "UnauthRoleArn": "arn:aws:iam::204828070643:role/amplify-iotthingslibrary-dev-120011-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::204828070643:role/amplify-iotthingslibrary-dev-120011-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-iotthingslibrary-dev-120011-deployment",
+      "UnauthRoleName": "amplify-iotthingslibrary-dev-120011-unauthRole",
+      "StackName": "amplify-iotthingslibrary-dev-120011",
+      "StackId": "arn:aws:cloudformation:eu-west-1:204828070643:stack/amplify-iotthingslibrary-dev-120011/7cc11f90-cdec-11ec-84be-02ff045e4aa1",
+      "AmplifyAppId": "d3nvj0sm6c93kd"
+    },
+    "categories": {
+      "auth": {
+        "iotthingslibrary3a3019e6": {},
+        "true": {}
+      },
+      "interactions": {
+        "lexbot": {
+          "deploymentBucketName": "amplify-iotthingslibrary-dev-120011-deployment",
+          "s3Key": "amplify-builds/lexbot-6c5a386d684c69765a4b-build.zip"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+#input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+
+type IotThing @model @auth(rules: [{ allow: private }])
+{
+  id: ID!
+  devEUI: String!
+  AppEUI: String
+  AppKey: String
+  Model: String!
+  Type: String!
+  description: String
+}
+
+type ThingModel @model @auth(rules: [{ allow: private }])
+{
+  id: ID!
+  Model: String!
+  Type: String!
+}

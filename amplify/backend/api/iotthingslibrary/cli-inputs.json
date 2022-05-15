@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "iotthingslibrary",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/grazzini/workspace/iot-things-library/amplify/backend/api/iotthingslibrary/schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authiotthingslibrary3a3019e6"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "AppSyncApiName": "iotthingslibrary",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "DynamoDBEnablePointInTimeRecovery": true,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authiotthingslibrary3a3019e6",
+      "Outputs.UserPoolId"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "iotthingslibrary3a3019e6_identitypool_3a3019e6",
+    "allowUnauthenticatedIdentities": true,
+    "resourceNameTruncated": "iotthi3a3019e6",
+    "userPoolName": "iotthingslibrary3a3019e6_userpool_3a3019e6",
+    "autoVerifiedAttributes": [
+      "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+      "email"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+      "email"
+    ],
+    "userpoolClientReadAttributes": [
+      "email"
+    ],
+    "userpoolClientLambdaRole": "iotthi3a3019e6_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": false,
+    "sharedId": "3a3019e6",
+    "resourceName": "iotthingslibrary3a3019e6",
+    "authSelections": "identityPoolAndUserPool",
+    "useDefault": "default",
+    "triggers": {},
+    "userPoolGroupList": [
+      "admin"
+    ],
+    "serviceName": "Cognito",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true,
+    "authRoleArn": {
+      "Fn::GetAtt": [
+        "AuthRole",
+        "Arn"
+      ]
+    },
+    "unauthRoleArn": {
+      "Fn::GetAtt": [
+        "UnauthRole",
+        "Arn"
+      ]
+    },
+    "breakCircularDependency": true,
+    "dependsOn": [],
+    "parentStack": {
+      "Ref": "AWS::StackId"
+    },
+    "permissions": []
+  }
+}
