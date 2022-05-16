@@ -4,6 +4,7 @@ import os
 import aws_cdk as cdk
 
 from iot_things_library_infra.iot_things_library_infra_stack import IotThingsLibraryInfraStack
+from iot_things_library_backup.iot_things_library_backup_stack import IotThingsLibraryBackupStack
 
 
 app = cdk.App()
@@ -24,5 +25,9 @@ IotThingsLibraryInfraStack(app, "IotThingsLibraryInfraStack",
 
     # For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html
     )
+
+IotThingsLibraryBackupStack(app, "IotThingsLibraryBackupStack",
+    )
+
 
 app.synth()
