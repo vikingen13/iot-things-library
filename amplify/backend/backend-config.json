@@ -67,11 +67,5 @@
       }
     }
   },
-  "interactions": {
-    "lexbot": {
-      "service": "Lex",
-      "providerPlugin": "awscloudformation",
-      "build": true
-    }
-  }
+  "interactions": {}
 }

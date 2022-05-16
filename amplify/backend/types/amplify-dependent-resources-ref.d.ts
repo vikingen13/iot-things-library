@@ -18,12 +18,5 @@ export type AmplifyDependentResourcesAttributes = {
             "GraphQLAPIIdOutput": "string",
             "GraphQLAPIEndpointOutput": "string"
         }
-    },
-    "interactions": {
-        "lexbot": {
-            "Region": "string",
-            "BotName": "string",
-            "FunctionArn": "string"
-        }
     }
 }

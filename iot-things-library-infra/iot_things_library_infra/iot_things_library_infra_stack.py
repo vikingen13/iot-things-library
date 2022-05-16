@@ -22,8 +22,10 @@ class IotThingsLibraryInfraStack(Stack):
             oauth_token= SecretValue.secrets_manager("my-github-token")
             ),
             auto_branch_creation=amplify.AutoBranchCreation( # Automatically connect branches that match a pattern set
-                patterns=["master/*","feature/*", "test/*"]),
+                patterns=["master","feature/*", "test/*"]),
             auto_branch_deletion=True
         )
+
+        myAmplifyApp.grant_principal.add_managed_policy(iam.ManagedPolicy.from_aws_managed_policy_name('AdministratorAccess-Amplify'))
 
         myMaster = myAmplifyApp.add_branch("master") # `id` will be used as repo branch name

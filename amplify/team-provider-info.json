@@ -15,12 +15,6 @@
       "auth": {
         "iotthingslibrary3a3019e6": {},
         "true": {}
-      },
-      "interactions": {
-        "lexbot": {
-          "deploymentBucketName": "amplify-iotthingslibrary-dev-120011-deployment",
-          "s3Key": "amplify-builds/lexbot-6c5a386d684c69765a4b-build.zip"
-        }
       }
     }
   }
