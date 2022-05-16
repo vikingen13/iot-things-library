@@ -1,5 +1,5 @@
 import './App.css';
-import Amplify, { Interactions } from 'aws-amplify';
+import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
 import '@aws-amplify/ui-react/styles.css';
 import { Authenticator } from '@aws-amplify/ui-react';
@@ -14,7 +14,7 @@ function isAdmin(aUser){
     let myAnswer = false;
 
     let myGroups = aUser.signInUserSession.accessToken.payload["cognito:groups"];
-    if (myGroups != undefined) {
+    if (myGroups !== undefined) {
         if(myGroups.includes('admin')){
             myAnswer = true;
         }        
