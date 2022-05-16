@@ -37,6 +37,3 @@ You can then access the application using the Amplify application URL.
 
 **Important**: You need to create a first user in Amazon Cognito and to add it to the admin group.
 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
