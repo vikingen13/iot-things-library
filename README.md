@@ -13,11 +13,11 @@ If a user has admin rights, he can create, list, update and delete objects.
 This application can be used to share devices informations only with people using the said devices.
 
 ## Solution Architecture
-----
+
 ![Archi](doc/Archi.png)
 
 ## Application Deployment
-----
+
 ### pre requisite
 To deploy this project, you need an AWS account. You also need the AWS cli and CDK cli installed and configured on your development environment.
 
