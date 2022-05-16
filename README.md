@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# IoT Things Library
+
+This project is a serverless application to store and share informations about your LoraWan devices.
+
+The principle of the application is simple: a user can get informations about an object only if he can provide its *Dev EUI*. As a consequence, the main page of the project is a simple search field where the user can enter a valid *Dev EUI*
+
+![Main screen](doc/mainscreen2.png)
+
+If a user has admin rights, he can create, list, update and delete objects.
+
+![Admin screen](doc/admin.png)
+
+This application can be used to share devices informations only with people using the said devices.
+
+## Solution Architecture
+----
+![Archi](doc/Archi.png)
+
+## Application Deployment
+----
+### pre requisite
+To deploy this project, you need an AWS account. You also need the AWS cli and CDK cli installed and configured on your development environment.
+
+### deployment
+- Clone the GitHub project in your own GitHub account
+- Clone the project on your local machine
+- In GitHub, generate an OAuth token and store it in your AWS account secrets manager under the my-github-token key
+- in the iot-things-library-infra folder, run "make all"
+
+This will deploy 2 cloud formations stack using AWS CDK:
+- One stack creates the AWS amplify app and connect it to the GitHub repository
+- One stack creates a backup plan in AWS Backup.
+
+Once the two stacks are deployed, the AWS Amplify pipeline will be automatically triggered to build the application backend and frontend.
+
+You can then access the application using the Amplify application URL.
+
+**Important**: You need to create a first user in Amazon Cognito and to add it to the admin group.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
