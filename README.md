@@ -37,3 +37,6 @@ You can then access the application using the Amplify application URL.
 
 **Important**: You need to create a first user in Amazon Cognito and to add it to the admin group.
 
+## Ideas for future
+- Enhance the CSS project organisation
+- Improve the look and feel
