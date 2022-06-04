@@ -1,0 +1,15 @@
+.header {
+    background-color: #607d8b ;
+    padding: 1rem;
+    box-shadow: 0px 03px 5px 0px var(--amplify-colors-neutral-60);
+}
+
+.header_Username{
+    color:#eeeeee;
+}
+
+.header_aligned-with-icon{
+    position: relative;
+    top: -5px;
+    margin-left: 5px; /* optional */
+}

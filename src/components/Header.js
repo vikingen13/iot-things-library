@@ -1,16 +1,17 @@
+import './Header.css'
 import React from 'react';
 import { Flex, Heading, View, Image } from '@aws-amplify/ui-react';
+import { MdAccountCircle } from "react-icons/md";
+
 
 const Header = ({aUserName}) => {
     return (
         <View as="div" 
-        padding="1rem" 
-        boxShadow="0px 03px 5px 0px var(--amplify-colors-neutral-60)"
-        backgroundColor="#607d8b"
+            className="header"
         >
-            <Flex justifyContent="space-between" alignItems="baseline">
+            <Flex justifyContent="space-between">
                 <Image src="./img/LoRaWAN_Logo.svg" width="8vw"/>                
-                <Heading level="4" color="#eeeeee"> User: {aUserName}</Heading>
+                <Heading className="header_Username" level="4"><MdAccountCircle/><span class="header_aligned-with-icon">{aUserName}</span></Heading>
             </Flex>
         </View>
     );

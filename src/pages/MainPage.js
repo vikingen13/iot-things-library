@@ -330,6 +330,7 @@ const MainPage = () => {
             <Button variation="primary" onClick={openModalCreate}>Create Thing</Button>
             <Button variation="primary" onClick={openModalModel}>Create Model</Button>
             </Flex>
+            <br/><br/>       
         </div>
     );
 };
