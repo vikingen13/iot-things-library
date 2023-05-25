@@ -16,6 +16,7 @@ const initialFormState = {
     AppKey: '',
     Type: '',
     Model: '',
+    Holder:'',
     description: ''
 }
 
@@ -216,6 +217,17 @@ const MainPage = () => {
                                 ></SelectField>
                             </Flex>
                             <br/>
+                            <Flex alignItems="baseline" justifyContent="right">
+                                <TextField
+                                    label="Holder"
+                                    size="small"
+                                    direction="row"
+                                    alignItems="baseline"
+                                    onChange={e => setFormData({ ...formData, 'Holder': e.target.value})}
+                                    placeholder="Holder"
+                                    value={formData.Holder}
+                            />
+                            </Flex>
                             <Flex alignItems="baseline" justifyContent="right">
                                 <TextField
                                     label="Description"

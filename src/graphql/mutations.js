@@ -14,6 +14,7 @@ export const createIotThing = /* GraphQL */ `
       Model
       Type
       description
+      Holder
       createdAt
       updatedAt
     }
@@ -32,6 +33,7 @@ export const updateIotThing = /* GraphQL */ `
       Model
       Type
       description
+      Holder
       createdAt
       updatedAt
     }
@@ -50,6 +52,7 @@ export const deleteIotThing = /* GraphQL */ `
       Model
       Type
       description
+      Holder
       createdAt
       updatedAt
     }

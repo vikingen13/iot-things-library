@@ -39,6 +39,9 @@ const CardThing = ({iotThing}) => {
             <Flex alignItems="baseline" justifyContent="flex-start">
                 <Text align="left">app Key: {iotThing.AppKey}</Text>
             </Flex>
+            <Flex alignItems="baseline" justifyContent="flex-start">
+                <Text align="left">holder: {iotThing.Holder}</Text>
+            </Flex>
             <br/>
             <Text>{iotThing.description}</Text>
             <br/>

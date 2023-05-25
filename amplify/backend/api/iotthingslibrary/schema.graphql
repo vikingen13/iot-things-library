@@ -12,6 +12,7 @@ type IotThing @model @auth(rules: [{ allow: private, operations: [read] },
   Model: String!
   Type: String!
   description: String
+  Holder: String
 }
 
 type ThingModel @model @auth(rules: [{ allow: groups, groups: ["admin"] }])

@@ -11,6 +11,7 @@ export const getIotThing = /* GraphQL */ `
       Model
       Type
       description
+      Holder
       createdAt
       updatedAt
     }
@@ -31,6 +32,7 @@ export const listIotThings = /* GraphQL */ `
         Model
         Type
         description
+        Holder
         createdAt
         updatedAt
       }
